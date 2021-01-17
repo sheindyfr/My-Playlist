@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MySongs</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+</head>
+
+<body>
+    <!--all the content is on the main picture-->
+    <div class="hero-image">
+        <!--the main screen-->
+        <div class="hero-text">
+            <h4 id="current_date"></h4><br><br><br><br>
+            <h1>Sheindy<br>Frenkel</h1>
+            <div id="main">
+                <button class="openbtn" id="show_playlist">Playlist</button>
+            </div>
+        </div>
+        <!--side bar - playlist & play video-->
+        <div id="mySidebar" class="sidebar">
+            <!--the X button to close the side bar-->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+            <!--table of playlist, first its empty-->
+            <table id="songs_table">
+                <tr>
+                    <h3 id="playlist_title">My Playlist &#128266;</h3>
+                </tr>
+            </table>
+            <!--the video item-->
+            <div class="video-item">
+                <div id="video-player" data-video-id="0"></div>
+            </div>
+        </div>
+        <!--side bar of social media icons-->
+        <div class="icon-bar">
+            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="google"><i class="fa fa-google"></i></a>
+            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+        </div>
+    </div>
+
+</body>
+
+</html>
